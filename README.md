@@ -1,7 +1,4 @@
 ---
-
-## README pour FidelMe
-
 # FidelMe
 
 ## Description
