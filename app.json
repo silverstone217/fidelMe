@@ -1,15 +1,16 @@
 {
   "expo": {
-    "name": "fidelme",
+    "name": "Fidelme",
     "slug": "fidelme",
     "version": "1.0.0",
+    "scheme": "com.silverstone217.fidelme",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#4f90e0"
     },
     "ios": {
       "supportsTablet": true
@@ -18,10 +19,30 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.silverstone217.fidelme"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Accepter que $(PRODUCT_NAME)  accede a votre  camera",
+          "microphonePermission": "Accepter que $(PRODUCT_NAME) accede a votre microphone",
+          "recordAudioAndroid": true
+        }
+      ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "44249e40-7fa8-4be2-990e-cb84a215d9c0"
+      }
     }
   }
 }
