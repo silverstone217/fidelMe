@@ -136,7 +136,7 @@ export default function App() {
             textAlign: "center",
           }}
         >
-          FidelMe inc 2024
+          Servi group inc 2024
         </Text>
 
         <StatusBar style="dark" />

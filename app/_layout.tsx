@@ -87,7 +87,9 @@ export default function Layout() {
   // font loader
   useEffect(() => {
     if (loaded || error) {
-      SplashScreen.hideAsync();
+      setTimeout(() => {
+        SplashScreen.hideAsync();
+      }, 4000);
     }
   }, [loaded, error]);
 

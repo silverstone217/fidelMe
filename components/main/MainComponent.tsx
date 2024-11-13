@@ -54,6 +54,7 @@ const MainComponent = () => {
             onPress: async () => {
               await removeData("shop");
               await removeData("points");
+
               setShop(null);
               setUserShops([]);
               setSuccess("Votre magasin a été supprimé avec succès!");
